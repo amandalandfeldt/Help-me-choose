@@ -9,13 +9,25 @@
       <h1>What should I choose?</h1>
       <div class="inputsection">
         <div class="inputs">
-          <input placeholder=Write something>
+          <input placeholder=Write something></input>
         </div>
-        <button>Add</button>
+        <button class="addoption">Add</button>
       </div>
-      <button class="addoption">Let's go!</button>
-      <div>
-        <img src="https://graduatefog.co.uk/wp-content/uploads/2008/10/How-to-Choose-your-career1.jpg">
-      </div>
+      <div class="resultsection">      </div>
+      <button>Let's go!</button>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+      $(function() {
+        $('.resultsection').hide()
+    
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+      $('.addoption').click(add_option)
+    })
+      </script>
   </body>
 </html>
